@@ -1,6 +1,5 @@
 " Active theme
-"let ayucolor="mirage"
-colorscheme gruvbox
+colorscheme dracula
 
 " Tranpsarency
 " hi! Normal ctermbg=NONE guibg=NONE
@@ -20,6 +19,7 @@ let g:tex_conceal='abdmg'
 let g:UltiSnipsExpandTrigger = '<tab>'
 let g:UltiSnipsJumpForwardTrigger = '<tab>'
 let g:UltiSnipsJumpBackwardTrigger = '<s-tab>'
+let g:UltiSnipsSnippetDirectories=["UltiSnips"]
 
 " Coc Configuration
 let g:coc_global_extensions = [
