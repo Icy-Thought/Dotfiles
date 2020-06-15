@@ -1,12 +1,17 @@
 " Active theme
-colorscheme dracula
+let ayucolor="mirage"
+colorscheme ayu
+
+let g:airline_theme='ayu_mirage'
 
 " Tranpsarency
 " hi! Normal ctermbg=NONE guibg=NONE
 
 " Vim-Airline configurations:
+let g:airline#extensions#default#layout = [ [ 'a', 'b', 'c' ], [ 'x', 'y' ] ]
+let g:airline_powerline_fonts = 1
 let g:airline#extensions#tabline#enabled = 1
-let g:airline#extensions#tabline#fnamemod = ':t'       " Disable file-paths 
+let g:airline#extensions#tabline#fnamemod = ':t'                    " Disable file-paths 
 
 " Vimtex
 let g:tex_flavor='latex'
@@ -30,6 +35,9 @@ let g:coc_global_extensions = [
 
 " CocAction Commands
 command! -nargs=0 Prettier :CocCommand prettier.formatFile
+
+" Which-Key
+nnoremap <silent> <leader> :WhichKey '<Space>'<CR>
 
 " Mappings
 nmap <C-s> <Plug>MarkdownPreview

@@ -3,11 +3,13 @@ call plug#begin()
 " General
 Plug 'vim-airline/vim-airline'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
-Plug 'mhinz/vim-startify'										" Start-page
-Plug 'tpope/vim-fugitive'										" Git-wrapper
+Plug 'mhinz/vim-startify'                                       " Start-page
+Plug 'tpope/vim-fugitive'                                       " Git-wrapper
+Plug 'liuchengxu/vim-which-key'                                 " Emacs-like Which-Suggestions
 
 " Code Formatting
-Plug 'tpope/vim-surround'										" Quoting/Paranthesizing made simple!
+Plug 'tpope/vim-surround'                                       " Quoting/Paranthesizing made simple!
+Plug 'sheerun/vim-polyglot'
 
 " Programming
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
@@ -18,9 +20,6 @@ Plug 'rust-lang/rust.vim'
 Plug 'lervag/vimtex'
 
 " Themes
-Plug 'vim-airline/vim-airline-themes'
-Plug 'dracula/vim', { 'as': 'dracula' }
-" Plug 'morhetz/gruvbox'
-" Plug 'arcticicestudio/nord-vim'
+" Plug 'vim-airline/vim-airline-themes'
 
 call plug#end()
