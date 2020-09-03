@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="src/logo.png">
+  <img src="src/logo.png" width="1000px">
   <h1>Journey of Dotfiles</h1>
 </div>
 
