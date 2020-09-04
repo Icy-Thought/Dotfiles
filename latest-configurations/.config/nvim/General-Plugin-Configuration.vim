@@ -1,24 +1,17 @@
 " Active theme
-let ayucolor="mirage"
-colorscheme ayu
-
-let g:airline_theme='ayu_mirage'
+colorscheme challenger_deep
 
 " Tranpsarency
 " hi! Normal ctermbg=NONE guibg=NONE
+
+" vim-startify
+autocmd BufDelete * if empty(filter(tabpagebuflist(), '!buflisted(v:val)')) | Startify | endif
 
 " Vim-Airline configurations:
 let g:airline#extensions#default#layout = [ [ 'a', 'b', 'c' ], [ 'x', 'y' ] ]
 let g:airline_powerline_fonts = 1
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#fnamemod = ':t'                    " Disable file-paths 
-
-" Vimtex
-let g:tex_flavor='latex'
-let g:vimtex_view_method='zathura'
-let g:vimtex_quickfix_mode=0
-set conceallevel=1
-let g:tex_conceal='abdmg'
 
 " UltiSnips
 let g:UltiSnipsExpandTrigger = '<tab>'
@@ -29,17 +22,7 @@ let g:UltiSnipsSnippetDirectories=["UltiSnips"]
 " Coc Configuration
 let g:coc_global_extensions = [
   \ 'coc-pairs',
+  \ 'coc-snippets',
   \ 'coc-json',
-  \ 'coc-rust-analyzer'
+  \ 'coc-clangd'
   \ ]
-
-" CocAction Commands
-command! -nargs=0 Prettier :CocCommand prettier.formatFile
-
-" Which-Key
-nnoremap <silent> <leader> :WhichKey '<Space>'<CR>
-
-" Mappings
-nmap <C-s> <Plug>MarkdownPreview
-nmap <M-s> <Plug>MarkdownPreviewStop
-nmap <C-p> <Plug>MarkdownPreviewToggle
